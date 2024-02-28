@@ -15,12 +15,10 @@
 #set -e
 #set -o pipefail
 
-read -p "Enter the file name: " filename
-
 # validate if file
-if [ -f $filename ]
+if [ -f $1 ]
 then
-	echo "$filename is a file"
+	echo "$1 is a file"
 else
-	echo "$filename is not a file"
+	echo "$1 is not a file"
 fi
